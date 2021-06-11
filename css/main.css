@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+    background: -webkit-linear-gradient(45deg, rgb(227, 227, 227), rgb(253, 253, 253));
+    background: -moz-linear-gradient(45deg, rgb(227, 227, 227), rgb(253, 253, 253));
+    background: linear-gradient(45deg, rgb(227, 227, 227), rgb(253, 253, 253));
+}
+
+.regContainer {
+    height: 100vh;
+}
+
+#errorBlock {
+    display: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="select"],
+textarea {
+    font-size: 20px;
+}
+.header-nav-item {
+    border: 2px solid #0B5ED7;
+    border-radius: 5px 5px 5px 5px;
+    transition: all 0.2s ease-out;
+    
+
+}
+
+.header-nav-item:hover {
+    border: 2px solid #0B5ED7;
+    border-radius: 40px 40px 40px 40px;
+    transition: all 0.2s ease-out;
+
+}
+
+@media (max-width: 720px) {
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="select"],
+    textarea {
+        font-size: 16px;
+    }
+}
