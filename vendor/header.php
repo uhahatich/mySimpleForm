@@ -22,7 +22,7 @@
                             <li class="nav-item header-nav-item ms-2"><a href="../auth.php" class="nav-link">Авторизация </a></li>
                         <? else : ?>
                             <form action="/phpScripts/exit.php">
-                                <button type="submit" class="btn btn-primary fs-4" id="exit">Выйти</button>
+                                <button type="submit" class="btn btn-primary fs-4" id="exitBtn">Выйти</button>
                             </form>
                         <? endif; ?>
                     </ul>

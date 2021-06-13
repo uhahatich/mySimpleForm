@@ -5,7 +5,7 @@
         <h1 class="fs-1 text-center mb-5">Форма авторизации</h1>
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <form action="/phpScripts/auth.php" method="POST">
+                <form>
                     <div class="mb-3">
                         <label for="email" class="form-label fs-4">Email</label>
                         <input type="email" name="email" class="form-control" id="email">
@@ -15,7 +15,7 @@
                         <input type="password" name="pass" class="form-control" id="pass">
                     </div>
                     <div class="alert alert-danger mt-2" id="errorBlock"></div>
-                    <button type="submit" class="btn btn-primary fs-4" id="authUser">Авторизация</button>
+                    <button type="button" class="btn btn-primary fs-4" id="authUser">Авторизация</button>
                 </form>
             </div>
         </div>

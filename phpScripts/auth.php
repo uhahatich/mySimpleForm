@@ -45,7 +45,8 @@ if ($user) {
         $result = $query->fetch(PDO::FETCH_OBJ);
 
         $_SESSION['userID'] = $result->id;
-        header('Location: ../auth.php');
+        // header('Location: ../auth.php');
+        echo 'Готово';
         
     } else {
         echo 'Пароль неправильный.';
