@@ -21,11 +21,24 @@
         </div>
     </div>
 <? else : ?>
+    <? include $_SERVER['DOCUMENT_ROOT'] . '/inc/profile.php' ?>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-4">
 
-                <h1> <? echo $_SESSION['userID'] ?> </h1>
+                <div class="user-card shadow p-3 mb-5 bg-body rounded fs-4">
+                    <div class="user-card-header mb-2">
+                        <p>Индекс пользователя: <? echo $_SESSION['userID'] ?> </p>
+                    </div>
+                    <div class="user-card-main mb-2">
+                        <p>Имя пользователя: <? echo $result->username ?> </p>
+
+                    </div>
+                    <div class="user-card-footer mb-2">
+                        <p>Почта пользователя: <? echo $result->email ?> </p>
+
+                    </div>
+                </div>
 
             </div>
 
