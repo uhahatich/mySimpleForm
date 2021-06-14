@@ -34,12 +34,7 @@ if (count($error) != 0) {
     exit();
 }
 
-$hash = password_hash($pass, PASSWORD_DEFAULT);
-
-$host = 'localhost';
-$dbname = 'newdb';
-$dbuser = 'root';
-$password = 'root';
+include $_SERVER['DOCUMENT_ROOT'] . '/inc/connect.php';
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $dbuser, $password);

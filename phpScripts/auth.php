@@ -20,16 +20,7 @@ if (count($error) != 0) {
     exit();
 }
 
-$host = 'localhost';
-$dbname = 'newdb';
-$dbuser = 'root';
-$password = 'root';
-
-try {
-    $conn = new PDO("mysql:host=$host;dbname=$dbname", $dbuser, $password);
-} catch (PDOException $pe) {
-    die("Could not connect to the database $dbname :" . $pe->getMessage());
-}
+include $_SERVER['DOCUMENT_ROOT'] . '/inc/connect.php';
 
 $sql = "SELECT `pass` FROM `users` WHERE `email` =:email";
 $query = $conn->prepare($sql);
